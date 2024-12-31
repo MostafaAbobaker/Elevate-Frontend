@@ -1,0 +1,18 @@
+.card {
+  .image {
+    height: 200px;
+  }
+  .card-title {
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #007bff;
+    }
+  }
+  &:hover {
+    border: 1px solid $success;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
+    transition: .2s ease-in-out;
+
+  }
+}

@@ -1,0 +1,17 @@
+<section class="products-page py-5">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-6">
+        <div class="input-group mb-3">
+          <input type="search" class="form-control" placeholder="Search..." [(ngModel)]="filterByName" >
+          <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+      <div class="col" *ngFor="let product of productsItems | filter: filterByName">
+        <app-product-item [product]="product"></app-product-item>
+      </div>
+    </div>
+  </div>
+</section>
